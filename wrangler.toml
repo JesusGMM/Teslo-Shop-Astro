@@ -1,0 +1,6 @@
+name = "teslo-shop"
+compatibility_date = "2025-04-15"
+
+kv_namespaces = [
+  { binding = "<SESSION>", id = "<86ae3d24c1e74c7d9b6234f1e81f1381>" }
+]

@@ -9,6 +9,18 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.7.0"
+    "@astrojs/cloudflare": "^12.5.0",
+    "@auth/core": "^0.37.4",
+    "@tailwindcss/vite": "^4.1.4",
+    "astro": "^5.7.0",
+    "auth-astro": "^4.2.0",
+    "bcryptjs": "^3.0.2",
+    "sweetalert2": "^11.18.0",
+    "tailwindcss": "^4.1.4",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/uuid": "^10.0.0"
   }
 }
