@@ -9,7 +9,9 @@ const { isLoggedIn, isAdmin } = Astro.locals;
   <h1 class="text-xl text-gray-800 font-bold">AstroStore</h1>
   <div class="flex items-center">
     <ul class="flex items-center space-x-6">
-      <CartCounter />
+      <li>
+        <CartCounter client:load transition:persist />
+      </li>
 
       <li class="font-semibold text-gray-700">
         <a href="/">Home</a>

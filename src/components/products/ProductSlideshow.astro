@@ -1,6 +1,6 @@
 ---
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
 interface Props {
   images: string[];
@@ -9,7 +9,7 @@ interface Props {
 const { images } = Astro.props;
 
 const fullImages = images.map((image) => {
-  return image.startsWith('http')
+  return image.startsWith("http")
     ? image
     : `${import.meta.env.PUBLIC_URL}/images/products/${image}`;
 });
@@ -44,15 +44,17 @@ const fullImages = images.map((image) => {
 </style>
 
 <script>
-  import Swiper from 'swiper';
-  import { Pagination } from 'swiper/modules';
+  import Swiper from "swiper";
+  import { Pagination } from "swiper/modules";
 
-  const swiper = new Swiper('.swiper', {
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
+  document.addEventListener("astro:page-load", () => {
+    const swiper = new Swiper(".swiper", {
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+      },
 
-    modules: [Pagination],
+      modules: [Pagination],
+    });
   });
 </script>
