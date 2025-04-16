@@ -10,12 +10,18 @@
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.5.0",
+    "@astrojs/react": "^4.2.4",
     "@auth/core": "^0.37.4",
     "@tailwindcss/vite": "^4.1.4",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
     "astro": "^5.7.0",
     "auth-astro": "^4.2.0",
     "bcryptjs": "^3.0.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "sweetalert2": "^11.18.0",
+    "swiper": "^11.2.6",
     "tailwindcss": "^4.1.4",
     "uuid": "^11.1.0"
   },
